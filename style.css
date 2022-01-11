@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+  
+    --title: #181818;
+    --text: #474747;
+    --font-1: 'Montserrati', sans-serif;
+    
+  }
+
+html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+    background-color: var(--white);
+    font-family: var(--font-1);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
+
+  
+header {
+    background: var(--title);
+    padding: 10px;
+  }
+  
+header  {
+    color: var(--bgSite);
+    font-family: var(--font-1);
+    font-size: 14px;
+    text-align: center;
+}
+
+.titulo{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.infomarcoes {
+    color: var(--white);
+}
+
+section {
+    background-image: url(./img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    padding: 150px;
+    margin-top: 10px;
+    
+    
+}
+
+
+
+
+.home-sections .infomarcoes{
+    
+    color: var(--white);
+}
+.home-sections .infomarcoes h2{
+ margin-bottom: 10px;
+ filter: brightness(150%);
+}
+.home-sections .infomarcoes p{
+    margin-bottom: 5px;
+}
+
+.loja {
+    text-align: center;
+}
+.loja h2 {
+    margin-top: 20px;
+}
+.loja p {
+    font-size: 18px;
+    color: var(--text);
+    margin-top: 10px;
+}
+
+
+
+.box{
+    background-color: #eeeeee;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 5px 5px;
+    padding: 50px 15px;
+    
+}
+
+footer {
+    background: var(--title);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+}
+
+.tenis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto
+    
+    
+}
+
+@media(max-width:1028px){
+     .tenis .box{
+        width: 30%;
+        margin: 5px;
+    }
+     .tenis{
+        margin: 10px;
+    }
+    
+}
+@media(max-width:750px){
+    .infomarcoes .tenis .box{
+        width: 48%;
+        margin: 5px;
+    }
+    .infomarcoes .tenis{
+        margin: 10px;
+    }
+    
+}
+@media(max-width:520px){
+    .infomarcoes .tenis .box{
+        width: 100%;
+        margin: 5px;
+    }
+    .infomarcoes .tenis{
+        margin: 10px;
+    }
+    
+}
